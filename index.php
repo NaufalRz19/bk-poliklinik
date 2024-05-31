@@ -131,7 +131,7 @@
                                 </div>
                                 <div class="col-lg-10">
                                     <p>Pelayanan di web ini sangat cepat dan mudah. Detail histori tercatat lengkap, termasuk catatan obat. Harga pelayanan terjangkau, Dokter ramah, pokoke mantab pol!</p>
-                                    <p style="font-size: 14px; color: #808080;">- Widhi, Semarang</p>
+                                    <p style="font-size: 14px; color: #808080;">- Naufal, Kudus</p>
                                 </div>  
                             </div> 
                         </div>
@@ -146,7 +146,7 @@
                                 </div>
                                 <div class="col-lg-10">
                                     <p>Pelayanan di web ini sangat cepat dan mudah. Detail histori tercatat lengkap, termasuk catatan obat. Harga pelayanan terjangkau, Dokter ramah, pokoke mantab pol!</p>
-                                    <p style="font-size: 14px; color: #808080;">- Bagus, Semarang</p>
+                                    <p style="font-size: 14px; color: #808080;">- Naufal, Kudus</p>
                                 </div>  
                             </div> 
                         </div>
@@ -161,7 +161,7 @@
                                 </div>
                                 <div class="col-lg-10">
                                     <p>Pelayanan di web ini sangat cepat dan mudah. Detail histori tercatat lengkap, termasuk catatan obat. Harga pelayanan terjangkau, Dokter ramah, pokoke mantab pol!</p>
-                                    <p style="font-size: 14px; color: #808080;">- Nugroho, Semarang</p>
+                                    <p style="font-size: 14px; color: #808080;">- Naufal, Kudus</p>
                                 </div>  
                             </div> 
                         </div>
