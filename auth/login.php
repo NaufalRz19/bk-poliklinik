@@ -37,7 +37,7 @@
         <?php
             $x = $_GET['error'] ?? null;
             if ($x == 1) {
-                echo '<div class="alert alert-danger">Usernam atau password salah!
+                echo '<div class="alert alert-danger">Username atau password salah!
                 <button type="button" class="close" data-dismiss="alert" aria-label="Close">
                     <span aria-hidden="true">&times;</span>
                 </button>

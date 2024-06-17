@@ -57,9 +57,9 @@
 <div class="wrapper">
 
   <!-- Preloader -->
-  <div class="preloader flex-column justify-content-center align-items-center">
+  <!-- <div class="preloader flex-column justify-content-center align-items-center">
     <img class="animation__shake" src="/bk-poliklinik/dist/img/AdminLTELogo.png" alt="AdminLTELogo" height="60" width="60">
-  </div>
+  </div> -->
 
   <!-- Navbar -->
   <?php include('../../layout/navbar.php');?>
@@ -208,6 +208,21 @@
                     <input type="hidden" name="id" value="<?php echo $_GET['id'] ?>">
                     <?php
                     }
+                    
+                    if (isset($_GET['id'])) { 
+                        $no_rm = $no_rm;
+                    }else { 
+                      $tahun_bulan = date("Ym");
+                      $query_last_id = "SELECT MAX(CAST(SUBSTRING(no_rm, 8) AS SIGNED)) as
+                      last_queue_number FROM pasien";
+                      $result_last_id = $pdo->query($query_last_id);
+                      $row_last_id = $result_last_id->fetch(PDO::FETCH_ASSOC);
+                      $last_insert_id = $row_last_id['last_queue_number'] ? $row_last_id
+                      ['last_queue_number'] : 0;
+                      $newQueueNumber = $last_insert_id + 1;
+                      $no_rm = $tahun_bulan . "-" . str_pad($newQueueNumber, 3, '0', STR_PAD_LEFT);
+                    }
+
                     ?>
                     <div class="row mt-3">
                       <label for="nama" class="form-label fw-bold">Nama</label>
@@ -227,10 +242,13 @@
                     </div>
                     <div class="row mt-3">
                       <label for="no_rm" class="form-label fw-bold">No rm</label>
-                      <input type="text" class="form-control" name="no_rm" id="no_rm" placeholder="no rm" value="<?php echo $no_rm ?>">
+                      <input type="text" class="form-control" name="no_rm" id="no_rm" placeholder="no rm" value="<?php echo $no_rm ?>" disabled>
                     </div>
                     <div class="row d-flex mt-3 mb-3">
                       <button type="submit" class="btn btn-primary rounded-pill" style="width: 3cm;" name="simpan">Simpan</button>
+                    </div>
+                    <div class="row d-flex mt-3 mb-3">
+                      <a href="index.php" class="btn btn-secondary rounded-pill" style="width: 3cm;">Reset</a>
                     </div>
                 </form>
             </div>
